@@ -1,0 +1,26 @@
+p {
+    font: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    padding: 4rem;
+    text-align: center;
+}
+
+.random-text-layout {
+    border: 2px solid black;
+    height: 3vh;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 22%;
+}
+
+.btn-layout {
+    display: inline-flex;
+}
+
+.btn-layout > div {
+    margin: 1rem;
+}

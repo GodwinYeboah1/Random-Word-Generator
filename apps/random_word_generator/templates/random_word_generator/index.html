@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Word Generator</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <p>Random Word (attempt # {{counter}} )</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="random-text-layout">
+            <p>{{randon_word}}</p>    
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="btn-layout">
+            <div class="random-word-generator-btn">
+                <form action="/random_word" method="get">
+                    <input type="submit" value="Generator">
+                </form>
+            </div>
+            <div class="reset-btn">
+                <form action="/reset" method="get">
+                    <input type="submit" value="Reset Attempt">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
